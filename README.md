@@ -1,2 +1,2 @@
-#F3X Timing System
+# F3X Timing System
 
