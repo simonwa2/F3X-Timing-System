@@ -1,0 +1,276 @@
+<!DOCTYPE HTML><html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+
+html { 
+	font-family: Helvetica; 
+	display: inline-block; 
+	margin: 0px auto; 
+	text-align: left;
+}
+
+.button { 
+	background-color: DodgerBlue; 
+	border: none; 
+	width: 150px; 
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center;  
+	text-decoration: none;  
+	display: inline-block;  
+	font-size: 16px;  
+	margin: 4px 2px;  
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.backButton { 
+	background-color: DodgerBlue; 
+	border: none; 
+	width: 50px; 
+	color: white; 
+	padding: 5px 10px; 
+	text-align: center;  
+	text-decoration: none;  
+	display: inline-block;  
+	font-size: 12px;  
+	margin: 2px 2px;  
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
+
+</head>
+<body>
+
+	<h1>System Settings</h1>
+	<a class="backButton" href="/">Exit</a>
+	<p id="ipAddr" hidden >%IPADDR%</p>
+	<h2>Base Configuration:</h2>
+
+<a id=baseA class="button" onclick="baseAtoggle()">Base A</a>
+
+<a id=baseB class="button" onclick="baseBtoggle()">Base B</a>
+<br>
+<a id=camA class="button" onclick="camAtoggle()">Camera A</a>
+
+<a id=camB class="button" onclick="camBtoggle()">Camera B</a>
+<p></p>
+
+<h2>Network Settings:</h2>
+<a id=wifiStatus class="button">Wifi</a>
+
+<!--
+<a id=bleStatus class="button" onclick="bleToggle()">Bluetooth</a>
+--->
+<a id=bleStatus class="button">Bluetooth</a>
+<p></p>
+
+<hr>
+<table>
+	<tr><td>Volume:</td><td id="vol">5</td>
+  <td><input id=volume type="range" min="1" max="10" value="5" oninput="updateVol()"></td>
+</table>
+<p></p>
+
+<table>
+	<tr><td>Battery:</td><td id="battery">0.0 V</td></tr>
+</table>
+
+
+<hr>
+<h2>Software Updates:</h2>
+<a class="button" href="/upload">Upload new support file</a>
+
+<a class="button" href="/update">Upload new firmware file</a>
+  
+
+<script language="javascript" type="text/javascript">
+//var url = "ws://10.0.0.240/ws";
+var url = "ws://UniTimerCD/ws";
+
+var output;
+var button;
+var canvas;
+var context;
+// This is called when the page finishes loading
+function init() {
+    
+	console.log("ip addr : " + document.getElementById("ipAddr").innerHTML);
+    // Connect to WebSocket server
+    //wsConnect(url);
+	wsConnect("ws://" + document.getElementById("ipAddr").innerHTML + "/ws");
+}
+// Call this to connect to the WebSocket server
+function wsConnect(url) {
+    
+    // Connect to WebSocket server
+    websocket = new WebSocket(url);
+    
+    // Assign callbacks
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+}
+// Called when a WebSocket connection is established with the server
+function onOpen(evt) {
+    // Log connection state
+    console.log("Connected");
+    
+    
+    // Get the current state of the LED
+    doSend("getSettings");
+}
+// Called when the WebSocket connection is closed
+function onClose(evt) {
+    // Log disconnection state
+    console.log("Disconnected");
+    
+  
+    // Try to reconnect after a few seconds
+    setTimeout(function() { wsConnect(url) }, 2000);
+}
+
+// Called when a message is received from the server
+function onMessage(evt) {
+    // Print out our received message
+    console.log("Received: " + evt.data);
+    
+	var obj = JSON.parse(evt.data);
+
+	if (obj.name == "baseA"){
+		if(obj.status==0){
+			// base is off
+			document.getElementById('baseA').style.backgroundColor='FireBrick ';
+			document.getElementById("baseA").innerHTML = "Base A: Off"
+		} else {
+			// base is on
+			document.getElementById('baseA').style.backgroundColor='DodgerBlue ';
+			document.getElementById("baseA").innerHTML = "Base A: On"	
+		}
+	}
+	if (obj.name == "baseB"){
+		if(obj.status==0){
+			// base is off
+			document.getElementById('baseB').style.backgroundColor='FireBrick ';
+			document.getElementById("baseB").innerHTML = "Base B: Off"
+		} else {
+			// base is on
+			document.getElementById('baseB').style.backgroundColor='DodgerBlue ';
+			document.getElementById("baseB").innerHTML = "Base B: On"	
+		}
+	}
+	if (obj.name == "camA"){	
+		if(obj.status==0){
+			// base is off
+			document.getElementById('camA').style.backgroundColor='FireBrick ';
+			document.getElementById("camA").innerHTML = "Cam A: Off"
+		} else {
+			// base is on
+			document.getElementById('camA').style.backgroundColor='DodgerBlue ';
+			document.getElementById("camA").innerHTML = "Cam A: On"	
+		}
+	}	
+	if (obj.name == "camB"){
+		if(obj.status==0){
+			// base is off
+			document.getElementById('camB').style.backgroundColor='FireBrick ';
+			document.getElementById("camB").innerHTML = "Cam B: Off"
+		} else {
+			// base is on
+			document.getElementById('camB').style.backgroundColor='DodgerBlue ';
+			document.getElementById("camB").innerHTML = "Cam B: On"	
+		}
+	}
+	if (obj.name == "wifi"){
+		if(obj.status==0){
+			// wifi is off
+			document.getElementById('wifiStatus').style.backgroundColor='FireBrick ';
+			document.getElementById("wifiStatus").innerHTML = "Wifi: Off"
+		} else if(obj.status==1){
+			// wifi is normal mode
+			document.getElementById('wifiStatus').style.backgroundColor='DodgerBlue ';
+			document.getElementById("wifiStatus").innerHTML = "Wifi: Normal mode"	
+		} else {
+			// wifi is AP mode
+			document.getElementById('wifiStatus').style.backgroundColor='DodgerBlue ';
+			document.getElementById("wifiStatus").innerHTML = "Wifi: AP mode"	
+		}
+
+	}
+	if (obj.name == "ble"){
+		if(obj.status==0){
+			// ble is off
+			document.getElementById('bleStatus').style.backgroundColor='FireBrick ';
+			document.getElementById("bleStatus").innerHTML = "Bluetooth: Off"
+		} else {
+			// ble is on
+			document.getElementById('bleStatus').style.backgroundColor='DodgerBlue ';
+			document.getElementById("bleStatus").innerHTML = "Bluetooth: On"	
+		}
+
+	}
+
+	if (obj.name == "volume"){
+		document.getElementById("volume").value = obj.vol;
+		document.getElementById("vol").innerHTML = obj.vol;
+	}
+
+	if (obj.name == "battery"){
+		document.getElementById("battery").innerHTML = obj.bat + " V";
+	}
+}
+
+// Called when a WebSocket error occurs
+function onError(evt) {
+    console.log("ERROR: " + evt.data);
+}
+// Sends a message to the server (and prints it to the console)
+function doSend(message) {
+    console.log("Sending: " + message);
+    websocket.send(message);
+}
+
+function baseAtoggle(){
+	doSend("ba");
+}
+
+function baseBtoggle(){
+	doSend("bb");
+}
+
+function camAtoggle(){
+	doSend("ca");
+}
+
+function camBtoggle(){
+	doSend("cb");
+}
+
+function bleToggle(){
+	doSend("ble");
+}
+function updateVol(){
+	doSend("vol:" + document.getElementById("volume").value);
+}
+
+// Call the init function as soon as the page loads
+window.addEventListener("load", init, false);
+
+	
+
+</script>
+
+</body>
+</html>	
