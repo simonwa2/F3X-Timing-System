@@ -19,6 +19,8 @@
 * Use the back arrow in your browser to go back to the Support file Upload page
 * Repeat the upload process for the other html files (wsFlights.html and wsSettings.html)
 
+![](Images/index_page_v1.0.1.png)
+
 **3.  Upload and apply the firmware file:**
 
 * Use the browser back arrow to return to the first web page
