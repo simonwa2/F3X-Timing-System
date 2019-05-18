@@ -14,12 +14,12 @@
 
 * Start Uni-Timer and in a web browser open the Unit-Timer IP address (as shown on the Uni-Timer display)
 * From the web page select "Upload new support file"
-* Select "Choose file" and find the index.html fiel downloaded earlier
-* Select Upload. The file will be loaded to Uni-Timer and "Upload OK" shoudl be displayed in the browser.
+* Select "Choose file" and find the index.html file downloaded earlier
+* Select Upload. The file will be loaded to Uni-Timer and "Upload OK" should be displayed in the browser.
 * Use the back arrow in your browser to go back to the Support file Upload page
 * Repeat the upload process for the other html files (wsFlights.html and wsSettings.html)
 
-**3.  Upload and apply the firmware file**
+**3.  Upload and apply the firmware file:**
 
 * Use the browser back arrow to return to the first web page
 * Select "Upload new firmware file"
