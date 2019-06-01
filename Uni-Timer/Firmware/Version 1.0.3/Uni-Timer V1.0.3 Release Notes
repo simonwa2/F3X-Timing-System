@@ -2,7 +2,7 @@
 F3X Uni-Timer V1.0.3
 
 Updates:
-1.	added abiity to store multiple wifi router/hotspot credentials for easy switching
+1.  added abiity to store multiple wifi router/hotspot credentials for easy switching.  Refer to wiki page: "F3X Uni Timer configuring for multiple wifi access points".
 2.  added option to connect via wifi config manager if unable to connect using stored credentials (green=ignore, red=config manager)
 3.  added option for auto restart time after prac flight - 10,15,20,30 secs
 4.  improved stability of AP mode
