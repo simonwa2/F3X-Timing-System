@@ -4,9 +4,12 @@
 
 ## News
 
-Uni-Timer Version 1.0.2 is available.  It contains some minor changes for lap calls, auto flight restart and external button in CD mode:
+### 1 June 2019
+**Uni-Timer Version 1.0.3 released.**  It contains the ability to save credentials for multiple wifi access points to allow easy switching, and also adjustable auto restart delay for practice flights:
 
-http://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.2
+http://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.3
+
+**Bluetooth Audio option being evaulated.**  Sends audio to a bluetooth speaker.  Tested successfully with a new version of the Uni-Timer circuit board, but it requires that the speaker supports Bluetooth 5.  It should also be able to be retrofitted to older Uni-timer and CD units.   
 
 ## Timing system Units
 
