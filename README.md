@@ -3,6 +3,8 @@
 ## About
 The F3X Timing System is a wireless solution for F3F and F3B.  It has been developed and evolved over many years, primarily in response to a need to simplify event timing and management in Western Australia.  In recent years systems have been built for individuals and clubs outside of Australia.
 
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/f3f_network_1.jpg" width="1024" title="F3F">
+
 ## News
 
 ### 1 June 2019
@@ -48,14 +50,20 @@ Now replaced by the Repeater.  Manages the local  network and acts as a range ex
 ### Base
 Now replaced by UniTimer. Wireless base button with flight data display.
 
-<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/base_unit.jpg" width="256" title="Base">
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/base_unit_v1.jpg" width="200" title="Base">
 
 ### Wind
 Will be replaced by UniTimer. Wireless transfer of anemometer data to CD or UNiTimer units.
+
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/wind_unit.jpg" width="200" title="Wind">
+
 ### Audio
 Will be replaced by UniTimer.  Wireless audio with line out for connecting to a powered speaker.
 ### Display
 Wireless large panel LED display for showing flight data to other pilots and watchers. 400mm x 400mm high brightness colour display.
+
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/display_unit_1.jpg" width="256" title="Display">
+
 ### Team
 The Team unit is designed primarily for F3B.  It provides flight data to support the distance and duration tasks. It can also act as Base A - reducing the number of people required to run the distance task.  The unit also works as a basic F3F timer (no data storage).
 
