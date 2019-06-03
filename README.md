@@ -5,6 +5,7 @@ The F3X Timing System is a wireless solution for F3F and F3B.  It has been devel
 
 <img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/f3f_network_1.jpg" width="1024" title="F3F">
 
+***
 ## News
 
 ### 1 June 2019
@@ -14,6 +15,7 @@ http://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Vers
 
 **Bluetooth Audio option being evaulated.**  Sends audio to a bluetooth speaker.  Tested successfully with a new version of the Uni-Timer circuit board, but it requires that the speaker supports Bluetooth 5.  It should also be able to be retrofitted to older Uni-timer and CD units.   
 
+***
 ## Timing system Units
 
 ### CD Unit
