@@ -34,8 +34,14 @@ capability to smart phones.  Also much cheaper than CD Unit.  It was
 originaly intended to be only used for training (particularly with
 piCAMTracker), but now my intention is to extend it to full contest
 management as well.
+
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/unitimer1.jpg" width="256" title="UniTimer">
+
 ### Repeater
-Range extender for the local network that links the units.  Only necessary where the terrain is hilly and the bases do not have clear line of sight of the course center.
+Range extender for the local network that links the units.  Placed on a pole near the centre of the course.   Only necessary where the terrain is hilly and the bases do not have clear line of sight of the course center.
+
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/repeater_small.jpg" width="90" title="Repeater">
+
 ### Coordinator
 Now replaced by the Repeater.  Manages the local  network and acts as a range extender for the local network that links the units. 
 ### Base
