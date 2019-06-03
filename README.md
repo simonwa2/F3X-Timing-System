@@ -1,6 +1,7 @@
 # F3X Timing System
 
 ## About
+The F3X Timing System is a wireless solution for F3F and F3B.  It has been developed and evolved over many years, primarily in response to a need to simplify event timing and management in Western Australia.  In recent years systems have been built for individuals and clubs outside of Australia.
 
 ## News
 
