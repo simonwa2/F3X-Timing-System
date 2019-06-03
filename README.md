@@ -21,6 +21,9 @@ anemometer integration for wind speed and direction. Links to base,
 audio and wind units for completely wireless operation.  Uses a high
 brightness colour touchscreen for operation.  As well as piCAMTracker,
 it also works with MotCam.
+
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/CD_unit_small.jpg" width="256" title="CD Unit">
+
 ### Uni-Timer
 Cutdown version of CD unit.  Provides announcements for
 countdowns, turn signals and flight time.  Links to base units for
