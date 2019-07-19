@@ -6,7 +6,7 @@ Note that Version 1.0.4 was an internal release only for testing - so it was ski
 * Download the zip file: Uni_timer v1.0.4.zip (select the zip file and then select Download).
 * Save the zip file to your computer and unpack it to a convenient location.
 * The zip contains the following files:
-  * 9 x .mp3 files (e.g. 1_laps.mp3, 2_laps.mp3, etc)
+  * 11 x .mp3 files (e.g. 1_laps.mp3, 2_laps.mp3, etc)
   * F3X_UniTimer.v1.0.5.bin (this is the actual firmware file)
 
 **2. Load the new support files:**
@@ -16,7 +16,7 @@ Note that Version 1.0.4 was an internal release only for testing - so it was ski
 * Select "Choose file" and find the 1_laps.mp3 file downloaded earlier
 * Select Upload. The file will be loaded to Uni-Timer and "Upload OK" should be displayed in the browser
 * Use the back arrow in your browser to go back to the Support file Upload page
-* Repeat the upload process for the other eight .mp3 files 
+* Repeat the upload process for the other ten .mp3 files 
 
 **3. Upload and apply the firmware file:**
 
