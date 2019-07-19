@@ -9,7 +9,7 @@ The F3X Timing System is a wireless solution for F3F and F3B.  It has been devel
 ## News
 
 ### 19 July 2019
-**Uni-Timer Version 1.0.5 released.**  It improves teh bluetooth button relaiablity and reduces latency in the audio:
+**Uni-Timer Version 1.0.5 released.**  It improves the bluetooth button reliablity and reduces latency in the audio:
 
 https://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.5
 
