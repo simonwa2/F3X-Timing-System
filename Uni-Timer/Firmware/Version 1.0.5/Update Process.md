@@ -3,7 +3,7 @@ Note that Version 1.0.4 was an internal release only for testing - so it was ski
 
 **1. Get the files:**
 
-* Download the zip file: Uni_timer v1.0.4.zip (select the zip file and then select Download).
+* Download the zip file: Uni_timer v1.0.5.zip (select the zip file and then select Download).
 * Save the zip file to your computer and unpack it to a convenient location.
 * The zip contains the following files:
   * 11 x .mp3 files (e.g. 1_laps.mp3, 2_laps.mp3, etc)
