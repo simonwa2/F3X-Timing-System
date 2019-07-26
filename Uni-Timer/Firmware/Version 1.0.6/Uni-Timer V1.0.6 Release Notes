@@ -1,8 +1,10 @@
 F3X Uni-Timer V1.0.6
 
 Updates:
-1.  Improve readability of startup screen - larger fonts for unit type ad IP address
+1.  Improve readability of startup screen - larger fonts for unit type and IP address
 2.  Removed wifi configuration manager to reduce confusion with wifi setup
+3.  Updated Practice Laps mode - fixed code missing to accept base and camera signals
+4.  Added actual volume value to options menu
         
 Known issues:
 1. 	Bluetooth no longer works with the two button "selfie" buttons
