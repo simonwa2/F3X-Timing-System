@@ -8,19 +8,15 @@ The F3X Timing System is a wireless solution for F3F and F3B.  It has been devel
 ***
 ## News
 
+### 26 July 2019
+**Uni-Timer Version 1.0.6 released.**  Improved legibility of startup screen, fixed issue with Practice Laps mode:
+https://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.6
+
 ### 19 July 2019
 **Uni-Timer Version 1.0.5 released.**  It improves the bluetooth button reliablity and reduces latency in the audio:
-
 https://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.5
 
-Bluetooth audio has now been added. A small bluetooth transmitter module sits in the case.  A Bluetooth speaker can be paired to it.  Although suitable for practice, standard bluetooth audio has too much inherent latency for contest use.
-
-### 1 June 2019
-**Uni-Timer Version 1.0.3 released.**  It contains the ability to save credentials for multiple wifi access points to allow easy switching, and also adjustable auto restart delay for practice flights:
-
-http://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.3
-
-**Bluetooth Audio option being evaulated.**  Sends audio to a bluetooth speaker.  Tested successfully with a new version of the Uni-Timer circuit board, but it requires that the speaker supports Bluetooth 5.  It should also be able to be retrofitted to older Uni-timer and CD units.   
+Bluetooth audio has now been added. A small bluetooth transmitter module sits in the case.  A Bluetooth speaker can be paired to it.  Although suitable for practice, standard bluetooth audio has too much inherent latency for contest use. 
 
 ***
 ## Timing system Units
