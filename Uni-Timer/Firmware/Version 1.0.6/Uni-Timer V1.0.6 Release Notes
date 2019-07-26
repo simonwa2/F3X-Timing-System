@@ -1,0 +1,57 @@
+F3X Uni-Timer V1.0.6
+
+Updates:
+1.  Improve readability of startup screen - larger fonts for unit type ad IP address
+2.  Removed wifi configuration manager to reduce confusion with wifi setup
+        
+Known issues:
+1. 	Bluetooth no longer works with the two button "selfie" buttons
+2.	Battery voltage display may not be accurate due to component tolerances.  It could be shown over or under value by 0.1 to 0.2V.
+3.	Base unit web pages not fully functional.  Loads pages meant for CD unit.
+
+Planned features for future versions:
+1.	Review historical flight data
+2.	F3XVault integration
+3.	Event management - event, pilot, rounds and flights - using F3XVault.
+4.	Anemometer integration
+5.	Extend web pages, e.g. pages dedicated for Base units to show flight data
+6.	Improve bluetooth button stability and support "selfie" buttons
+
+----------------------------------------------------------------------------------------------------------------------------
+Older Updates:
+
+V1.0.5
+1.  improved stability of bluetooth button - now selectable between iTag and TrackerPA buttons (both green) - but may still occassionaly cause problems
+2.  reduced audio latency (reduced button debounce time and removed blank audio at start of mp3 files)
+
+V1.0.4
+This version was not released.  Internal testing only.
+
+V1.0.3
+1.  added abiity to store multiple wifi router/hotspot credentials for easy switching.  Refer to wiki page: "F3X Uni Timer configuring for multiple wifi access points".
+2.  added option to connect via wifi config manager if unable to connect using stored credentials (green=ignore, red=config manager)
+3.  added option for auto restart time after prac flight - 10,15,20,30 secs
+4.  improved stability of AP mode
+
+V1.0.2
+1.	Changed lap call to number only
+2.  Added option for auto restart at end of proctice flight
+3.  Enabled external button for CD mode
+4.  Displays signal strength value on flight screen when configured as base unit
+
+V1.0.1
+1.	Wifi and bluetooth startup overide.
+	Pressing the Green button when switching power on will overide wifi and bluetooth settings. Neither service will be started. 
+2.	Wifi mode menu.
+	New sub menu allowing selection of wifi mode then select save and restart.
+3.	Bluetooth mode menu.
+	New sub menu allowing selection of bluetooth mode (On or Off) and bluetooth button type (Single or Double), then select save and restart.
+4.	Unit type menu.
+	New submenu allowing selection of unit type (CD, Base A, Base B, Audio or Wind), then select Save and restart.
+5.	Bases/camera signal strength display.
+	The network signal strength (1-9) measured at the bases/cameras is display on the Bases setup menu 
+	and the Flight screen (when flight not running). An X is shown if no connection.
+6.	Updated system settings web page.
+	Base and camera connections can be switched on/off.  Volume can be adjusted and battery voltage is shown.
+7.	Updated practice flight web page.
+	Expanded data displayed and fields are updated dynamically as flight progresses. Volume can be adjusted and battery voltage is shown.
