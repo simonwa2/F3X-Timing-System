@@ -16,3 +16,5 @@
 
 
 The upgrade is complete.
+
+Note that if you are upgrading from a version earlier than 1.0.5, then make sure that you also upload all of the support files provided with the earlier versions.  Support files are typically .mp3, .html or .csv files.  They were included in the previous version upgrades.
