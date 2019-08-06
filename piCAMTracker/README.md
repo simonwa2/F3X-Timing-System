@@ -33,6 +33,6 @@ The expansion port provides the following signals:
 * TURN (Output) from piCAMTracker)
 * CUT (Output) from piCAMTracker)
 
-<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/CD_unit_small.jpg" width="256" title="picam_piHat">
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/picam_piHat.jpg" width="376" title="piCAMTracker pi Hat">
 
-<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/CD_unit_small.jpg" width="256" title="picam_battery">
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/picam_batteries.jpg" width="376" title="piCAMTracker battery pack">
