@@ -12,6 +12,11 @@ The F3X Timing System is a wireless solution for F3F and F3B.  It has been devel
 ***
 ## News
 
+### 18 November 2019
+**CD Unit Version 2.7 released.**  Support for creating offline events and adding pilots, auto-restart options for practice flights, flight times > 99 secs, mark pilot as out of round or event, various fixes:
+
+https://github.com/simonwa2/F3X-Timing-System/tree/master/CD%20Unit/Firmware/Version%202.7
+
 ### 26 July 2019
 **Uni-Timer Version 1.0.6 released.**  Improved legibility of startup screen, fixed issue with Practice Laps mode:
 https://github.com/simonwa2/F3X-Timing-System/tree/master/Uni-Timer/Firmware/Version%201.0.6
