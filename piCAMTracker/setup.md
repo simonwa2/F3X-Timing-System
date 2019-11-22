@@ -32,17 +32,24 @@ You change these to if you want from the Raspberry Pi Configuration  / System ta
 
 ## Setting up wifi
   On the bottom right of the display is the wifi status:
-* <what it shows>
   
 * Click on the wifi symbol and the unit will search for available wifi routers
 * Select your wifi router and enter the password
 
-
-
+This should be done for your home wifi and also any hotspot/router that you will use at the slope - e.g. your mobile phone.
 
 ## VNC Viewer
+VNC Viewer is a program that allows you to remotely access teh Raspberry Pi from a computer.  This removes the need to connect a monitor, mouse and keyboard.  For this to work the piCAMTracker unit and teh coputer must be conencted to tehsame wifi network, e.g. your home wifi.
 
+VNC is already enabled on the Raspberry Pi.
 
+Download VNC Viewer from here:
 
-
+To connect to the piCAMTracker unit:
+* turn power on
+* open VNC Viewer on your computer
+* enter the hostname (e.g BaseA) or IP address (e.g. 192.168.0.22) of your picamTracker unit in the VNC address bar
+* VNC Viewer wil attempt to conenct to teh unit.  You will be prompted for the login name and password.  The login name is "pi" and teh password is "pct" unless you changed it.
+* VNC Viewer will then show the Raspberry Pi window and you can control it from your computer.
+* Note that the camera view from piCAMTracker is not shown in VNC.
 
