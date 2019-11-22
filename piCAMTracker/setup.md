@@ -44,12 +44,13 @@ VNC Viewer is a program that allows you to remotely access teh Raspberry Pi from
 VNC is already enabled on the Raspberry Pi.
 
 Download VNC Viewer from here:
+https://www.realvnc.com/en/connect/download/viewer/
 
 To connect to the piCAMTracker unit:
 * turn power on
 * open VNC Viewer on your computer
 * enter the hostname (e.g BaseA) or IP address (e.g. 192.168.0.22) of your picamTracker unit in the VNC address bar
-* VNC Viewer wil attempt to conenct to teh unit.  You will be prompted for the login name and password.  The login name is "pi" and teh password is "pct" unless you changed it.
+* VNC Viewer will attempt to conenct to teh unit.  You will be prompted for the login name and password.  The login name is "pi" and the password is "pct" unless you changed it.
 * VNC Viewer will then show the Raspberry Pi window and you can control it from your computer.
 * Note that the camera view from piCAMTracker is not shown in VNC.
 
