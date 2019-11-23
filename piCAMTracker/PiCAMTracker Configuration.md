@@ -1,3 +1,5 @@
+# PiCAMTracker Configuration
+
 This section deals with setting up piCAMTracker with the pi Hat installed and connecting to one of the F3X timing system units (CD, Team or UniTimer).
 
 The picam unit, as supplied, is configured for testing done in Western Australia and needs configuring for your local wifi and country specific settings (keyboard, language, timezone etc).
