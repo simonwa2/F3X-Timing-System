@@ -6,7 +6,11 @@ Updates:
 3.  Revised and extended web pages
 4.  Red button now exits back from menus
 5.  Added Audio Unit capability.  The unit can operate as a remote audio unit for connection to a PA speaker
-6.  Various small bug fixes.
+6.  Various small bug fixes
+7.  Cleaned up some inconsistencies in the web pages
+8.  fixed an issue in Practice Laps where turn beep may be missed due to lap time annoucement taking too long
+9.  added a header line to the data file for flight downloads
+10. updated functionality of the D1 and D2 expansion port inputs when external switches are connected
         
 Known issues:
 1.	Battery voltage display may not be accurate due to component tolerances.  It could be shown over or under value by 0.1 to 0.2V.
