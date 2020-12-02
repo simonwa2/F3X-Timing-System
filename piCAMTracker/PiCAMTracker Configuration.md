@@ -30,7 +30,7 @@ Power on the unit (with the mouse, keyboard and monitor connected).  The monitor
 Note that the camera view will partially cover the configuration window.  You can drag the window to one side to see it better.
 
 ## Passsword and Hostname
-* Hostname has been preset to either "BaseA" or "BaseB".  This is what will show as the name on a web page and in VNC.
+* Hostname has been preset to either "CamA" or "CamB".  This is what will show as the name on a web page and in VNC.
 * Password has been preset to "pct".  Required when accessing the unit via VNC.
 
 You change these to if you want from the Raspberry Pi Configuration  / System tab.
@@ -56,7 +56,7 @@ https://www.realvnc.com/en/connect/download/viewer/
 To connect to the piCAMTracker unit:
 * turn power on
 * open VNC Viewer on your computer
-* enter the hostname (e.g BaseA) or IP address (e.g. 192.168.0.22) of your picamTracker unit in the VNC address bar
+* enter the hostname (e.g CamA) or IP address (e.g. 192.168.0.22) of your picamTracker unit in the VNC address bar
 * VNC Viewer will attempt to conenct to the unit.  You will be prompted for the login name and password.  The login name is "pi" and the password is "pct" unless you changed it.
 * VNC Viewer will then show the Raspberry Pi window and you can control it from your computer.
 * Note that the camera view from piCAMTracker is not shown in VNC.
