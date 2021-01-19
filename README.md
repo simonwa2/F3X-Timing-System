@@ -12,6 +12,17 @@ The F3X Timing System is a wireless solution for F3F and F3B.  It has been devel
 ***
 ## News
 
+### 19 January 2021
+**Transition to ESP NOW radio link.**  Development of a new radio link between modules is nearing completion.  It utilises the ESP NOW protocol available on ESP8266 and ESP32 processors.  ESP NOW provides significantly lower latency and hardware cost than the Xbee modules that the timing system has used for many years.
+Existing timing system units will be able to be upgraded to ESP NOW via a plug-in module that replaces the Xbee.  New units have also been developed that utilise ESP NOW.
+
+A short video demonstrating the system is available :
+https://www.youtube.com/watch?v=c-oyRrp0d6k&feature=emb_logo
+
+The video also shows the new UniTimer V2 which is a major upgrade from the original UniTimer with an improved and larger display.
+
+Upgrade modules and new units will available from March 2021 (subject to successful contest testing of ESP NOW in February).
+
 ### 18 November 2019
 **CD Unit Version 2.7 released.**  Support for creating offline events and adding pilots, auto-restart options for practice flights, flight times > 99 secs, mark pilot as out of round or event, various fixes:
 
