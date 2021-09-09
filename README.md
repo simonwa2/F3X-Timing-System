@@ -4,10 +4,10 @@
 The F3X Timing System is a wireless solution for F3F and F3B.  It has been developed and evolved over many years, primarily in response to a need to simplify event timing and management in Western Australia.  In recent years systems have been built for individuals and clubs outside of Australia.
 
 ### Simple System for Training Example
-<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/UniTimer_no_wifi1.png" width="768" title="F3F">
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/SimpleSystem.jpg" width="768" title="F3F">
 
 ### Full System Example
-<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/f3f_network_1.jpg" width="1024" title="F3F">
+<img src="https://github.com/simonwa2/F3X-Timing-System/blob/master/images/FullSystem.jpg" width="1024" title="F3F">
 
 ***
 ## News
